@@ -1,0 +1,63 @@
+# 公开仓库采用允许清单：默认不上传任何文件。
+# 新增页面或素材时，确认可以公开后，在下面添加对应路径。
+# 原始素材、内部笔记、备份与系统文件仍保留在本地。
+*
+!/.gitignore
+!/.nojekyll
+
+# 网站页面
+!/index.html
+!/about.html
+!/talk-to-her.html
+!/condukt.html
+!/helldiver-guidebook.html
+!/heart-ecg.html
+!/mantis-blade.html
+!/hand-pose-music-console.html
+!/starcitizen-replica.html
+!/flowing-tension.html
+!/nuke-town.html
+
+# 网站样式与交互
+!/assets/
+!/assets/css/
+!/assets/css/styles.css
+!/assets/js/
+!/assets/js/script.js
+
+# 页面实际使用的展示素材
+!/image/
+!/image/Graham Lyu.jpg
+!/image/talktoherimg1.jpg
+!/image/talktoherimg2.jpg
+!/image/talktoherimg3.jpg
+!/image/talktohervideo.mov
+!/image/conduktvideo1.mp4
+!/image/conduktvideo2.mp4
+!/image/conduktgif1.mp4
+!/image/conduktgif2.mp4
+!/image/conduktgif3.mp4
+!/image/conduktgif4.mp4
+!/image/flowing-tension/
+!/image/flowing-tension/installation.jpg
+!/image/flowing-tension/structure.jpg
+!/image/flowing-tension/balloons.jpg
+!/image/flowing-tension/projection-detail.jpg
+!/image/nuke-town/
+!/image/nuke-town/installation.jpg
+!/image/nuke-town/structure.jpg
+!/image/nuke-town/fragments.jpg
+!/image/nuke-town/projection-detail.jpg
+!/image/mantis-blade/
+!/image/mantis-blade/prototype-worn.jpg
+!/image/mantis-blade/prototype-electronics.jpg
+!/image/helldiver-guidebook/
+!/image/helldiver-guidebook/cover.png
+!/image/helldiver-guidebook/shared-chaos.png
+!/image/helldiver-guidebook/quiet-disbelief.png
+!/image/helldiver-guidebook/surprise.png
+!/image/starcitizen-replica/
+!/image/starcitizen-replica/stanton-demo.mp4
+!/image/starcitizen-replica/quantum-travel.jpg
+!/image/starcitizen-replica/crusader.jpg
+!/image/starcitizen-replica/hurston.jpg

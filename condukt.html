@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Condukt — Graham Lyu</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <nav id="nav">
+    <a href="index.html" class="nav-logo">Graham Lyu</a>
+    <ul class="nav-links">
+      <li class="nav-item-work">
+        <span class="nav-work-trigger">Work</span>
+        <ul class="work-dropdown">
+          <li><a href="talk-to-her.html" class="dropdown-item"><span class="dropdown-index"></span><span class="dropdown-label">Talk to her</span></a></li>
+          <li><a href="condukt.html" class="dropdown-item"><span class="dropdown-index"></span><span class="dropdown-label">Condukt</span></a></li>
+          <li><a href="helldiver-guidebook.html" class="dropdown-item"><span class="dropdown-index"></span><span class="dropdown-label">Helldiver Guidebook</span></a></li>
+          <li><a href="heart-ecg.html" class="dropdown-item"><span class="dropdown-index"></span><span class="dropdown-label">Heart ECG</span></a></li>
+          <li><a href="mantis-blade.html" class="dropdown-item"><span class="dropdown-index"></span><span class="dropdown-label">Mantis Blade</span></a></li>
+          <li><a href="hand-pose-music-console.html" class="dropdown-item"><span class="dropdown-index"></span><span class="dropdown-label">Hand Pose Music Console</span></a></li>
+          <li><a href="starcitizen-replica.html" class="dropdown-item"><span class="dropdown-index"></span><span class="dropdown-label">Star Citizen Replica</span></a></li>
+          <li><a href="flowing-tension.html" class="dropdown-item"><span class="dropdown-index"></span><span class="dropdown-label">Flowing Tension</span></a></li>
+          <li><a href="nuke-town.html" class="dropdown-item"><span class="dropdown-index"></span><span class="dropdown-label">Nuke Town</span></a></li>
+        </ul>
+      </li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main">
+    <div class="project-editorial">
+
+      <div class="project-header">
+        <h1 class="project-page-title">Condukt</h1>
+        <p class="project-subtitle">2025–2026 &nbsp;·&nbsp; Interactive AI installation</p>
+      </div>
+
+      <div class="media-block">
+        <video src="image/conduktvideo1.mp4" controls playsinline preload="metadata"></video>
+      </div>
+
+      <div class="media-block">
+        <video src="image/conduktvideo2.mp4" controls playsinline preload="metadata"></video>
+      </div>
+
+      <div class="editorial-body">
+        <p>
+          <em>Condukt</em> is a real-time gesture interface that lets anyone feel what it is like to conduct an orchestra.
+        </p>
+        <p>
+          A standard webcam tracks the user's body and hands. Turning to face left brings in the strings. Turning right shifts focus to percussion. Raising an arm increases the volume. A quick upward gesture cues a section in. A closed fist silences it. No instrument. No score. Just the body, moving through space, shaping sound.
+        </p>
+        <p>
+          I started this project after watching a video of Jacob Collier freestyle conducting an audience through a performance of "Yellow" in Los Angeles. He was so charming — and I found myself thinking: I wish I could feel what that is like. But conducting is not something you can simply pick up. It is deeply personal, stylistic, accumulated over years. You cannot code it one-to-one.
+        </p>
+        <p>
+          So I asked a different question: not how to replicate conducting, but what makes someone <em>feel</em> like they are conducting. The answer, I think, is control — direct, physical, immediate control over the sound of an orchestra. The sense that when you move, the music responds to you specifically.
+        </p>
+        <p>
+          What surprised me most was watching different people use the system. Everyone produced something different. Some brought in all four sections at once and let them fill the room. Others kept things sparse, one section at a time, almost meditative. The same tracks, the same gestures — but each person made something that felt like their own. I had not expected the system to feel so personal. I think that is what it means to conduct.
+        </p>
+      </div>
+
+      <h2 class="editorial-heading">Key Features</h2>
+
+      <div class="feature">
+        <div class="media-block">
+          <video src="image/conduktgif1.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <p class="feature-desc">
+          <strong>Body orientation</strong> <span class="arrow">→</span> Select section. Face left for Strings, center-left for Woodwinds, center-right for Brass, right for Percussion. Hold for 0.5 seconds to lock in.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="media-block">
+          <video src="image/conduktgif2.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <p class="feature-desc">
+          <strong>Right hand height</strong> <span class="arrow">→</span> Volume. Raise to increase, lower to decrease.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="media-block">
+          <video src="image/conduktgif3.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <p class="feature-desc">
+          <strong>Hand up</strong> <span class="arrow">→</span> Cue. Left hand up activates the focused section. Both hands up activates all sections at full volume.
+        </p>
+      </div>
+
+      <div class="feature">
+        <div class="media-block">
+          <video src="image/conduktgif4.mp4" autoplay loop muted playsinline></video>
+        </div>
+        <p class="feature-desc">
+          <strong>Fist</strong> <span class="arrow">→</span> Mute. Left fist silences the focused section. Both fists silence everything.
+        </p>
+      </div>
+
+      <div class="editorial-body">
+        <details class="technical-note">
+          <summary>Technical note</summary>
+          <p>
+            The system uses Google MediaPipe's PoseLandmarker and HandLandmarker models to detect body orientation and hand gestures at approximately 30fps. A Python backend processes landmark data and sends MIDI Control Change messages to Ableton Live via the macOS IAC Driver. Five core gestures are implemented: body orientation for section selection (with a 0.5-second dwell lock to prevent accidental switching), right wrist height for volume control, left wrist upward velocity for cueing, left hand fist for muting, and bilateral arm raise for full orchestra activation. A WebSocket server broadcasts state to a web-based visualization displaying four orchestral sections — Strings, Woodwinds, Brass, Percussion — as color-coded blocks responding in real time to gesture input.
+          </p>
+        </details>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Graham Lyu</span>
+    <span>NYU IMA · New York</span>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
